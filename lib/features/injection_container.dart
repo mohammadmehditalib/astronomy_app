@@ -1,4 +1,4 @@
-import 'package:astronomy_app/features/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
 import 'package:astronomy_app/features/Astronomy/data/datasources/ApiService.dart';
 import 'package:astronomy_app/features/Astronomy/data/repositories/astronomy_repository_impl.dart';
 import 'package:astronomy_app/features/Astronomy/domain/repository_interfaces/astronomy_repository.dart';

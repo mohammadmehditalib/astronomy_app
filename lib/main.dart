@@ -1,6 +1,6 @@
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/pages/imagefetcherfile.dart';
 import 'package:flutter/material.dart';
-import 'package:astronomy_app/features/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
-import 'package:astronomy_app/features/Presentation%20layer/pages/imagefetcherfile.dart';
 import 'package:astronomy_app/features/injection_container.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:astronomy_app/features/injection_container.dart' as di;

@@ -1,8 +1,7 @@
-import 'package:astronomy_app/features/Presentation%20layer/cubit/cubit/astronomy_state.dart';
-
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/cubit/cubit/astronomy_state.dart';
+import 'package:astronomy_app/features/Astronomy/domain/usecases/get_astronomy_picture.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../Astronomy/domain/usecases/get_astronomy_picture.dart';
 
 class AstronomyCubit extends Cubit<AstronomyState> {
   final GetAstronomyPicture getAstronomyPicture;

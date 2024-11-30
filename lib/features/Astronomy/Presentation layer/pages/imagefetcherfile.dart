@@ -1,7 +1,7 @@
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/cubit/cubit/astronomy_state.dart';
+import 'package:astronomy_app/features/Astronomy/Presentation%20layer/widgets/imagewidget.dart';
 import 'package:flutter/material.dart';
-import 'package:astronomy_app/features/Presentation%20layer/cubit/cubit/astronomy_cubit.dart';
-import 'package:astronomy_app/features/Presentation%20layer/cubit/cubit/astronomy_state.dart';
-import 'package:astronomy_app/features/Presentation%20layer/widgets/imagewidget.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -39,12 +39,10 @@ class ImageFetcherPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Display Image with loading indicator
                   SizedBox(
                       width: double.infinity,
                       child: Imagewidget(url: state.picture.url)),
                   const SizedBox(height: 20),
-                  // Explanation Text
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
@@ -80,7 +78,8 @@ class ImageFetcherPage extends StatelessWidget {
             return Center(
               child: ElevatedButton(
                 onPressed: () {
-                  BlocProvider.of<AstronomyCubit>(context).fetchAstronomyPicture();
+                  BlocProvider.of<AstronomyCubit>(context)
+                      .fetchAstronomyPicture();
                 },
                 child: const Text('Fetch Astronomy Picture of the Day'),
               ),
