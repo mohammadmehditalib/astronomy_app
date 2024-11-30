@@ -81,7 +81,7 @@ class ImageFetcherPage extends StatelessWidget {
                   BlocProvider.of<AstronomyCubit>(context)
                       .fetchAstronomyPicture();
                 },
-                child: const Text('Fetch Astronomy Picture of the Day'),
+                child: const Text('Press button to Fetch Astronomy Picture of the Day'),
               ),
             );
           }
